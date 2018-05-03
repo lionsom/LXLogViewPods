@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46724CE5209A9CEC00FE09E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CE4209A9CEC00FE09E7 /* AppDelegate.m */; };
+		46724CE8209A9CEC00FE09E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CE7209A9CEC00FE09E7 /* ViewController.m */; };
+		46724CEB209A9CEC00FE09E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46724CE9209A9CEC00FE09E7 /* Main.storyboard */; };
+		46724CED209A9CEC00FE09E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46724CEC209A9CEC00FE09E7 /* Assets.xcassets */; };
+		46724CF0209A9CEC00FE09E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46724CEE209A9CEC00FE09E7 /* LaunchScreen.storyboard */; };
+		46724CF3209A9CEC00FE09E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CF2209A9CEC00FE09E7 /* main.m */; };
+		46724CFC209A9EA500FE09E7 /* LXLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CFB209A9EA500FE09E7 /* LXLogView.m */; };
+		46724CFF209AA0D200FE09E7 /* LXLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CFE209AA0D200FE09E7 /* LXLogTableViewCell.m */; };
+		46724D02209AA11200FE09E7 /* LXLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724D01209AA11200FE09E7 /* LXLogModel.m */; };
+		46724D05209B11DF00FE09E7 /* LXLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724D04209B11DF00FE09E7 /* LXLogManager.m */; };
+		46724D08209B173500FE09E7 /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724D07209B173500FE09E7 /* NSString+StringSize.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46724CE0209A9CEC00FE09E7 /* LXLogViewPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXLogViewPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46724CE3209A9CEC00FE09E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46724CE4209A9CEC00FE09E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46724CE6209A9CEC00FE09E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46724CE7209A9CEC00FE09E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46724CEA209A9CEC00FE09E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46724CEC209A9CEC00FE09E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46724CEF209A9CEC00FE09E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46724CF1209A9CEC00FE09E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46724CF2209A9CEC00FE09E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46724CFA209A9EA500FE09E7 /* LXLogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogView.h; sourceTree = "<group>"; };
+		46724CFB209A9EA500FE09E7 /* LXLogView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogView.m; sourceTree = "<group>"; };
+		46724CFD209AA0D200FE09E7 /* LXLogTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogTableViewCell.h; sourceTree = "<group>"; };
+		46724CFE209AA0D200FE09E7 /* LXLogTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogTableViewCell.m; sourceTree = "<group>"; };
+		46724D00209AA11200FE09E7 /* LXLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogModel.h; sourceTree = "<group>"; };
+		46724D01209AA11200FE09E7 /* LXLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogModel.m; sourceTree = "<group>"; };
+		46724D03209B11DF00FE09E7 /* LXLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogManager.h; sourceTree = "<group>"; };
+		46724D04209B11DF00FE09E7 /* LXLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogManager.m; sourceTree = "<group>"; };
+		46724D06209B173500FE09E7 /* NSString+StringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
+		46724D07209B173500FE09E7 /* NSString+StringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSize.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46724CDD209A9CEC00FE09E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46724CD7209A9CEC00FE09E7 = {
+			isa = PBXGroup;
+			children = (
+				46724CE2209A9CEC00FE09E7 /* LXLogViewPods */,
+				46724CE1209A9CEC00FE09E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46724CE1209A9CEC00FE09E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46724CE0209A9CEC00FE09E7 /* LXLogViewPods.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46724CE2209A9CEC00FE09E7 /* LXLogViewPods */ = {
+			isa = PBXGroup;
+			children = (
+				46724CF9209A9D9F00FE09E7 /* LXLogView */,
+				46724CE3209A9CEC00FE09E7 /* AppDelegate.h */,
+				46724CE4209A9CEC00FE09E7 /* AppDelegate.m */,
+				46724CE6209A9CEC00FE09E7 /* ViewController.h */,
+				46724CE7209A9CEC00FE09E7 /* ViewController.m */,
+				46724CE9209A9CEC00FE09E7 /* Main.storyboard */,
+				46724CEC209A9CEC00FE09E7 /* Assets.xcassets */,
+				46724CEE209A9CEC00FE09E7 /* LaunchScreen.storyboard */,
+				46724CF1209A9CEC00FE09E7 /* Info.plist */,
+				46724CF2209A9CEC00FE09E7 /* main.m */,
+			);
+			path = LXLogViewPods;
+			sourceTree = "<group>";
+		};
+		46724CF9209A9D9F00FE09E7 /* LXLogView */ = {
+			isa = PBXGroup;
+			children = (
+				46724CFA209A9EA500FE09E7 /* LXLogView.h */,
+				46724CFB209A9EA500FE09E7 /* LXLogView.m */,
+				46724CFD209AA0D200FE09E7 /* LXLogTableViewCell.h */,
+				46724CFE209AA0D200FE09E7 /* LXLogTableViewCell.m */,
+				46724D00209AA11200FE09E7 /* LXLogModel.h */,
+				46724D01209AA11200FE09E7 /* LXLogModel.m */,
+				46724D03209B11DF00FE09E7 /* LXLogManager.h */,
+				46724D04209B11DF00FE09E7 /* LXLogManager.m */,
+				46724D06209B173500FE09E7 /* NSString+StringSize.h */,
+				46724D07209B173500FE09E7 /* NSString+StringSize.m */,
+			);
+			path = LXLogView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46724CDF209A9CEC00FE09E7 /* LXLogViewPods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46724CF6209A9CEC00FE09E7 /* Build configuration list for PBXNativeTarget "LXLogViewPods" */;
+			buildPhases = (
+				46724CDC209A9CEC00FE09E7 /* Sources */,
+				46724CDD209A9CEC00FE09E7 /* Frameworks */,
+				46724CDE209A9CEC00FE09E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXLogViewPods;
+			productName = LXLogViewPods;
+			productReference = 46724CE0209A9CEC00FE09E7 /* LXLogViewPods.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46724CD8209A9CEC00FE09E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = LX;
+				TargetAttributes = {
+					46724CDF209A9CEC00FE09E7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 46724CDB209A9CEC00FE09E7 /* Build configuration list for PBXProject "LXLogViewPods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46724CD7209A9CEC00FE09E7;
+			productRefGroup = 46724CE1209A9CEC00FE09E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46724CDF209A9CEC00FE09E7 /* LXLogViewPods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46724CDE209A9CEC00FE09E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46724CF0209A9CEC00FE09E7 /* LaunchScreen.storyboard in Resources */,
+				46724CED209A9CEC00FE09E7 /* Assets.xcassets in Resources */,
+				46724CEB209A9CEC00FE09E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46724CDC209A9CEC00FE09E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46724CE8209A9CEC00FE09E7 /* ViewController.m in Sources */,
+				46724CF3209A9CEC00FE09E7 /* main.m in Sources */,
+				46724D05209B11DF00FE09E7 /* LXLogManager.m in Sources */,
+				46724D02209AA11200FE09E7 /* LXLogModel.m in Sources */,
+				46724CE5209A9CEC00FE09E7 /* AppDelegate.m in Sources */,
+				46724D08209B173500FE09E7 /* NSString+StringSize.m in Sources */,
+				46724CFC209A9EA500FE09E7 /* LXLogView.m in Sources */,
+				46724CFF209AA0D200FE09E7 /* LXLogTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46724CE9209A9CEC00FE09E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46724CEA209A9CEC00FE09E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46724CEE209A9CEC00FE09E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46724CEF209A9CEC00FE09E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46724CF4209A9CEC00FE09E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46724CF5209A9CEC00FE09E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46724CF7209A9CEC00FE09E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL2VP3W5B3;
+				INFOPLIST_FILE = LXLogViewPods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LX.LXLogViewPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46724CF8209A9CEC00FE09E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL2VP3W5B3;
+				INFOPLIST_FILE = LXLogViewPods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LX.LXLogViewPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46724CDB209A9CEC00FE09E7 /* Build configuration list for PBXProject "LXLogViewPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46724CF4209A9CEC00FE09E7 /* Debug */,
+				46724CF5209A9CEC00FE09E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46724CF6209A9CEC00FE09E7 /* Build configuration list for PBXNativeTarget "LXLogViewPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46724CF7209A9CEC00FE09E7 /* Debug */,
+				46724CF8209A9CEC00FE09E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46724CD8209A9CEC00FE09E7 /* Project object */;
+}
