@@ -41,6 +41,7 @@
 		46724D04209B11DF00FE09E7 /* LXLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogManager.m; sourceTree = "<group>"; };
 		46724D06209B173500FE09E7 /* NSString+StringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
 		46724D07209B173500FE09E7 /* NSString+StringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSize.m"; sourceTree = "<group>"; };
+		8A3ADF99209B4F4B00067D2A /* LXLogPods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogPods.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		46724CF9209A9D9F00FE09E7 /* LXLogView */ = {
 			isa = PBXGroup;
 			children = (
+				8A3ADF99209B4F4B00067D2A /* LXLogPods.h */,
 				46724CFA209A9EA500FE09E7 /* LXLogView.h */,
 				46724CFB209A9EA500FE09E7 /* LXLogView.m */,
 				46724CFD209AA0D200FE09E7 /* LXLogTableViewCell.h */,

@@ -8,6 +8,8 @@
 
 #import "LXLogTableViewCell.h"
 
+#import "LXLogPods.h"
+
 #define screenW  [UIScreen mainScreen].bounds.size.width
 #define screenH  [UIScreen mainScreen].bounds.size.height
 
@@ -18,7 +20,10 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
     UILabel * threadLabel;
     UILabel * detailLabel;
     UILabel * contentLabel;
-    UILabel * fengexianLabel;
+    
+    UILabel * fengeLable_1;
+    UILabel * fengeLable_2;
+    UILabel * fengeLable_3;
 }
 @end
 
@@ -51,6 +56,7 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if (self) {
+
         //创建UI
         [self CreateUI];
     }
@@ -63,23 +69,17 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
 -(void)CreateUI {
     
     self.backgroundColor = [UIColor clearColor];
-    
-    //适配
-    UIFont * LXLogTableViewCell_DeFaultFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        LXLogTableViewCell_DeFaultFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:40];
-    }
 
     // timelabel 设置
-    timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, screenW/5, 50)];
+    timeLabel = [[UILabel alloc]init];
     timeLabel.text = @"20154523652";
     timeLabel.font = LXLogTableViewCell_DeFaultFont;
-    timeLabel.adjustsFontSizeToFitWidth = YES;
+    timeLabel.numberOfLines = 0;   //多行
     timeLabel.textColor = [UIColor whiteColor];
     timeLabel.backgroundColor = [UIColor clearColor];
     [self addSubview:timeLabel];
     
-    threadLabel = [[UILabel alloc]initWithFrame:CGRectMake(screenW/5, 0, screenW/5 * 4, 50)];
+    threadLabel = [[UILabel alloc]init];
     threadLabel.text = @"threadLabel";
     threadLabel.font = LXLogTableViewCell_DeFaultFont;
     threadLabel.adjustsFontSizeToFitWidth = YES;
@@ -87,7 +87,7 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
     threadLabel.backgroundColor = [UIColor clearColor];
     [self addSubview:threadLabel];
     
-    detailLabel = [[UILabel alloc]initWithFrame:CGRectMake(screenW/5, 50, screenW/5* 4, 50)];
+    detailLabel = [[UILabel alloc]init];
     detailLabel.text = @"detailLabel";
     detailLabel.font = LXLogTableViewCell_DeFaultFont;
     detailLabel.adjustsFontSizeToFitWidth = YES;    // 自适应缩小
@@ -105,18 +105,46 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
     
     NSLog(@"AAAA = %f",self.frame.size.height - 20);
     
-    fengexianLabel = [[UILabel alloc]init];
-    fengexianLabel.text = @"==============================================================================================================";
-    fengexianLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    fengexianLabel.backgroundColor = [UIColor clearColor];
-    fengexianLabel.textColor = [UIColor whiteColor];
-    [self addSubview:fengexianLabel];
     
+    fengeLable_1 = [[UILabel alloc]init];
+    fengeLable_1.text = @"-------------------------------------------------------------------------------------------------------------------------------";
+    fengeLable_1.lineBreakMode = NSLineBreakByWordWrapping;
+    fengeLable_1.backgroundColor = [UIColor clearColor];
+    fengeLable_1.textColor = [UIColor whiteColor];
+    [self addSubview:fengeLable_1];
+    
+    
+    fengeLable_2 = [[UILabel alloc]init];
+    fengeLable_2.text = @"-------------------------------------------------------------------------------------------------------------------------------";
+    fengeLable_2.lineBreakMode = NSLineBreakByWordWrapping;
+    fengeLable_2.backgroundColor = [UIColor clearColor];
+    fengeLable_2.textColor = [UIColor whiteColor];
+    [self addSubview:fengeLable_2];
+    
+    
+    fengeLable_3 = [[UILabel alloc]init];
+    fengeLable_3.text = @"==============================================================================================================";
+    fengeLable_3.lineBreakMode = NSLineBreakByWordWrapping;
+    fengeLable_3.backgroundColor = [UIColor clearColor];
+    fengeLable_3.textColor = [UIColor whiteColor];
+    [self addSubview:fengeLable_3];
+    
+    
+    // 设置背景色
+    timeLabel.backgroundColor = [UIColor redColor];
+    threadLabel.backgroundColor = [UIColor blueColor];
+    detailLabel.backgroundColor = [UIColor blackColor];
+    contentLabel.backgroundColor = [UIColor orangeColor];
+    
+    fengeLable_1.backgroundColor = [UIColor purpleColor];
+    fengeLable_2.backgroundColor = [UIColor purpleColor];
+    fengeLable_3.backgroundColor = [UIColor purpleColor];
+
 }
 
 -(void)setModel:(LXLogModel *)model {
     timeLabel.text = model.CurrentTime;
-    
+
     threadLabel.text = model.CurrentThread;
     
     detailLabel.text = model.Details;
@@ -127,9 +155,30 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
 //  自绘分割线 重写即可
 - (void)drawRect:(CGRect)rect {
     NSLog(@"BVBBBB");
-    fengexianLabel.frame = CGRectMake(0, rect.size.height - 20, rect.size.width, 20);
     
-    contentLabel.frame = CGRectMake(screenW/5, 100, screenW/5* 4, rect.size.height - 50-50-20);
+    float samllW = screenW/5;
+    float bigW = screenW/5*4;
+    
+    // timelable / detailLabel 高度
+    float h_1 = 25;
+    // fenge_1 / 2 高度
+    float h_2 = 10;
+    // fengge_3 高度
+    float h_3 = 20;
+    
+    timeLabel.frame = CGRectMake(0, 0, samllW, rect.size.height - h_3);
+    
+    threadLabel.frame = CGRectMake(samllW, 0, bigW, h_1);
+    
+    fengeLable_1.frame = CGRectMake(samllW, h_1, bigW, h_2);
+    
+    detailLabel.frame = CGRectMake(samllW, h_1 + h_2, bigW, h_1);
+    
+    fengeLable_2.frame = CGRectMake(samllW, h_1 + h_2 + h_1, bigW, h_2);
+    
+    contentLabel.frame = CGRectMake(samllW, h_1 + h_2 + h_1 + h_2, bigW, rect.size.height - (h_1 + h_2 + h_1 + h_2 + h_3));
+    
+    fengeLable_3.frame = CGRectMake(0, rect.size.height - h_3, rect.size.width, h_3);
 }
 
 @end

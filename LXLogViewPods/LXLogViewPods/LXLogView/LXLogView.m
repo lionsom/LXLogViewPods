@@ -8,17 +8,7 @@
 
 #import "LXLogView.h"
 
-#import "LXLogTableViewCell.h"
-
-#import "LXLogManager.h"
-
-#import "NSString+StringSize.h"
-
-#define StatusHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?44:20) // 适配iPhone x 状态栏
-
-#define screenW  [UIScreen mainScreen].bounds.size.width
-#define screenH  [UIScreen mainScreen].bounds.size.height
-
+#import "LXLogPods.h"
 
 @interface LXLogView()<UITableViewDelegate, UITableViewDataSource>
 
@@ -27,6 +17,7 @@
 @property (nonatomic, strong) NSMutableArray * dataSource;
 
 @property (nonatomic, strong) UIButton * showLXLogBtn;
+
 @property (nonatomic, assign) BOOL isShow;
 
 @end
@@ -39,7 +30,7 @@
     if (self) {
         // 初始化
         _isShow = YES;
-        
+
         _dataSource = [[LXLogManager loadLXLog] mutableCopy];
         
         [self CreateView];
@@ -53,9 +44,7 @@
 #pragma mark - 通知处理
 - (void)notificationCallBack:(NSNotification *)notification{
     
-    NSDictionary * dict = [notification userInfo];
-    
-    NSLog(@"DDDDD = %@",dict);
+    // NSDictionary * dict = [notification userInfo];
     
     // 数据更新
     _dataSource = [[LXLogManager loadLXLog] mutableCopy];
@@ -67,7 +56,7 @@
         NSIndexPath *lastIndex = [NSIndexPath indexPathForRow:_dataSource.count-1 inSection:0];
         [self.tableView scrollToRowAtIndexPath:lastIndex atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     }
-    
+
 }
 
 
@@ -95,7 +84,7 @@
     _showLXLogBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, StatusHeight, screenW/5, 30)];
     _showLXLogBtn.backgroundColor = [UIColor clearColor];
     [_showLXLogBtn setTitle:@"隐藏日志" forState:UIControlStateNormal];
-    [_showLXLogBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [_showLXLogBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     _showLXLogBtn.layer.cornerRadius = 15;
     _showLXLogBtn.layer.borderWidth = 2.0f;
     _showLXLogBtn.layer.borderColor = [UIColor blueColor].CGColor;
@@ -118,7 +107,6 @@
         _tableView.hidden = NO;
         self.frame = CGRectMake(0, 0, screenW, screenH);
     }
-    
 }
 
 
@@ -150,17 +138,12 @@
  */
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UIFont * LXLogTableViewCell_DeFaultFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        LXLogTableViewCell_DeFaultFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:40];
-    }
-    
     LXLogModel * model = _dataSource[indexPath.row];
     
     CGFloat statusHeight =  [model.Content sizeWithLabelWidth:screenW/5*4 font:LXLogTableViewCell_DeFaultFont].height;
     
     
-    return (50+50+20+statusHeight);
+    return (25+25+10+10+20+statusHeight);
 }
 
     

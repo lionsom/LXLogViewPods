@@ -10,6 +10,7 @@
 
 #import "LXLogModel.h"
 
+
 @interface LXLogTableViewCell : UITableViewCell
 
 /**

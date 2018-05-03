@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+
 #import "LXLogView.h"
+#import "LXLogPods.h"
 
 @interface AppDelegate ()
 

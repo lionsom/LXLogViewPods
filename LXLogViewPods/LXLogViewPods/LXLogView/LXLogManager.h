@@ -8,11 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString * const k_LXLogDefault = @"k_LXLogDefault";
-
-static NSString * const n_LXLogChanged = @"n_LXLogChanged";
-
-
 @interface LXLogManager : NSObject
 
 /**

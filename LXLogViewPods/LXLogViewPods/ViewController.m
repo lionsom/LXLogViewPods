@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 
-#import "LXLogManager.h"
-#import "LXLogModel.h"
+#import "LXLogPods.h"
 
 @interface ViewController ()
 

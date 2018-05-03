@@ -8,6 +8,10 @@
 
 #import "LXLogManager.h"
 
+#import "LXLogPods.h"
+
+static NSString * const k_LXLogDefault = @"k_LXLogDefault";
+
 @implementation LXLogManager
 
 +(void)saveLXLog:(id)data {
