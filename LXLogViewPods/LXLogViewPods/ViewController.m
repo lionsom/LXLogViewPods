@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-#import "LXLogPods.h"
+#import "AFNetworking.h"
+
+#import "LXLog.h"
 
 @interface ViewController ()
 
@@ -30,6 +32,33 @@
     
     [self createBtn:CGRectMake(0, H*2, W, H) :3 :@"clear"];
 
+    [self createBtn:CGRectMake(W, H*2, W, H) :4 :@"Tabbar"];
+
+
+    NSString * b = @"sdfdsadsaf";
+    LXLog(@"%@",b);
+    
+    NSArray *a = @[@1,@2,@3,@4,@5];
+    LXLog(@"DD == %@",a);
+
+    LXLog(@"A = %@",@"sdafasdfaafasdfasddsaffasdfdssadfasdasdfadsdfasdasfafasdfasddsaffasdfdssadfasdasdfadsdfasdasffadsdfasdasf");
+
+    NSDictionary * dict = @{@"A":@"123",
+                            @"B":@"456",
+                            @"C":@"678",
+                            @"D":@"999"
+                            };
+    LXLog(@"NSDictionary = %@",dict);
+    
+    NSDate * date = [NSDate date];
+    LXLog(@"%@",date);
+    
+    
+    // 第三种：最常用
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        LXLog(@"NSDictionary = %@",dict);
+    });//定制了延时执行的任务，不会阻塞线程，效率较高（推荐使用）
+    
 }
 
 
@@ -37,19 +66,37 @@
     UIButton * btn = (UIButton *)sender;
     
     if (btn.tag == 1) {
-        LXLogModel * model = [LXLogModel new];
-        model.CurrentThread = strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0 ? @"MainThread" : @"OtherThread";
-        model.CurrentTime = [self getCurrentTime];
-        model.Details = [NSString stringWithFormat:@"%s === %d ",__FUNCTION__, __LINE__];
-        model.Content = @"aslkjwjkefwo;ewfdsf;fdasjkfdsjklfdsaklfadsssssssssssdsadfsadfsdfdafdasfdsafdfsdfsadsafadsfadsadsfdfasdafsasdfsdafdfsafdsa";
-        [LXLogManager saveLXLog:model];
+        //1.AFNetworking
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+        NSURL *URL = [NSURL URLWithString:@"https://httpbin.org/get"];
+        NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+        NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+        } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
+        } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+            if (error) {
+                LXLog(@"%@",error.localizedDescription);
+            } else {
+                LXLog(@"%@",response);
+                LXLog(@"%@",responseObject);
+            }
+        }];
+        [dataTask resume];
     }
     if (btn.tag == 2) {
-        NSArray * AAA = [LXLogManager loadLXLog];
-        NSLog(@"");
+        if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {
+            LXLog(@"main Thread");
+        }
     }
     if (btn.tag == 3) {
-        [LXLogManager clearLXLog];
+
+        
+    }
+    if (btn.tag == 4) {
+        
+        LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
+        
+        [self presentViewController:tabbarC animated:YES completion:nil];
     }
     
 }

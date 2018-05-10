@@ -7,20 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46717B2320A2A37E004DAD91 /* LXLogTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B2220A2A37E004DAD91 /* LXLogTabBarController.m */; };
+		46717B2720A2A52F004DAD91 /* LXLogBaseNaigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B2620A2A52F004DAD91 /* LXLogBaseNaigationController.m */; };
+		46717B3820A2A7BA004DAD91 /* LXLogConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B3720A2A7BA004DAD91 /* LXLogConsoleViewController.m */; };
+		46717B3B20A2A7C9004DAD91 /* LXLogAppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B3A20A2A7C9004DAD91 /* LXLogAppInfoViewController.m */; };
+		46717B3E20A2A7D7004DAD91 /* LXLogSandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B3D20A2A7D7004DAD91 /* LXLogSandboxViewController.m */; };
+		46717B4420A2CD90004DAD91 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B4120A2CD90004DAD91 /* WeakProxy.m */; };
+		46717B4520A2CD90004DAD91 /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B4320A2CD90004DAD91 /* FPSLabel.m */; };
+		46717B4920A2D943004DAD91 /* LXLogStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B4820A2D943004DAD91 /* LXLogStoreManager.m */; };
+		46717B4C20A2D9B6004DAD91 /* LXLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B4B20A2D9B6004DAD91 /* LXLogConfig.m */; };
+		46717B4F20A2DE28004DAD91 /* LXLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B4E20A2DE28004DAD91 /* LXLogModel.m */; };
+		46717B5320A2F5CF004DAD91 /* LXLogCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B5220A2F5CF004DAD91 /* LXLogCompat.m */; };
+		46717B5720A2F8BC004DAD91 /* NSString+LXLogDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B5620A2F8BC004DAD91 /* NSString+LXLogDate.m */; };
+		46717B5A20A301C0004DAD91 /* LXLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B5920A301C0004DAD91 /* LXLogHelper.m */; };
 		46724CE5209A9CEC00FE09E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CE4209A9CEC00FE09E7 /* AppDelegate.m */; };
 		46724CE8209A9CEC00FE09E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CE7209A9CEC00FE09E7 /* ViewController.m */; };
 		46724CEB209A9CEC00FE09E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46724CE9209A9CEC00FE09E7 /* Main.storyboard */; };
 		46724CED209A9CEC00FE09E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46724CEC209A9CEC00FE09E7 /* Assets.xcassets */; };
 		46724CF0209A9CEC00FE09E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46724CEE209A9CEC00FE09E7 /* LaunchScreen.storyboard */; };
 		46724CF3209A9CEC00FE09E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CF2209A9CEC00FE09E7 /* main.m */; };
-		46724CFC209A9EA500FE09E7 /* LXLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CFB209A9EA500FE09E7 /* LXLogView.m */; };
-		46724CFF209AA0D200FE09E7 /* LXLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CFE209AA0D200FE09E7 /* LXLogTableViewCell.m */; };
-		46724D02209AA11200FE09E7 /* LXLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724D01209AA11200FE09E7 /* LXLogModel.m */; };
-		46724D05209B11DF00FE09E7 /* LXLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724D04209B11DF00FE09E7 /* LXLogManager.m */; };
-		46724D08209B173500FE09E7 /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724D07209B173500FE09E7 /* NSString+StringSize.m */; };
+		467C169120A3CEEF00A58BDD /* LXLogGlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C169020A3CEEF00A58BDD /* LXLogGlobalConst.m */; };
+		467C169420A3D15D00A58BDD /* LXLogConsoleTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C169320A3D15D00A58BDD /* LXLogConsoleTVCell.m */; };
+		467C169720A3D4FE00A58BDD /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C169620A3D4FE00A58BDD /* NSString+StringSize.m */; };
+		467C169D20A4332100A58BDD /* tabbar_app@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467C169A20A4332100A58BDD /* tabbar_app@2x.png */; };
+		467C169E20A4332100A58BDD /* tabbar_console@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467C169B20A4332100A58BDD /* tabbar_console@2x.png */; };
+		467C169F20A4332100A58BDD /* tabbar_sandbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467C169C20A4332100A58BDD /* tabbar_sandbox@2x.png */; };
+		467C16A320A44BA600A58BDD /* LXLogAppInfoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C16A220A44BA600A58BDD /* LXLogAppInfoTVCell.m */; };
+		467C16A620A4569C00A58BDD /* NSString+LXLogDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C16A520A4569C00A58BDD /* NSString+LXLogDeviceInfo.m */; };
+		FF044AF8B837E6F074925038 /* Pods_LXLogViewPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6EE394450C862DD17033F0 /* Pods-LXLogViewPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLogViewPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods.debug.xcconfig"; sourceTree = "<group>"; };
+		46717B2120A2A37E004DAD91 /* LXLogTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogTabBarController.h; sourceTree = "<group>"; };
+		46717B2220A2A37E004DAD91 /* LXLogTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogTabBarController.m; sourceTree = "<group>"; };
+		46717B2520A2A52F004DAD91 /* LXLogBaseNaigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogBaseNaigationController.h; sourceTree = "<group>"; };
+		46717B2620A2A52F004DAD91 /* LXLogBaseNaigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogBaseNaigationController.m; sourceTree = "<group>"; };
+		46717B3620A2A7BA004DAD91 /* LXLogConsoleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogConsoleViewController.h; sourceTree = "<group>"; };
+		46717B3720A2A7BA004DAD91 /* LXLogConsoleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogConsoleViewController.m; sourceTree = "<group>"; };
+		46717B3920A2A7C9004DAD91 /* LXLogAppInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogAppInfoViewController.h; sourceTree = "<group>"; };
+		46717B3A20A2A7C9004DAD91 /* LXLogAppInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogAppInfoViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
+		46717B3C20A2A7D7004DAD91 /* LXLogSandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogSandboxViewController.h; sourceTree = "<group>"; };
+		46717B3D20A2A7D7004DAD91 /* LXLogSandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogSandboxViewController.m; sourceTree = "<group>"; };
+		46717B4020A2CD90004DAD91 /* WeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakProxy.h; sourceTree = "<group>"; };
+		46717B4120A2CD90004DAD91 /* WeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakProxy.m; sourceTree = "<group>"; };
+		46717B4220A2CD90004DAD91 /* FPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabel.h; sourceTree = "<group>"; };
+		46717B4320A2CD90004DAD91 /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
+		46717B4720A2D943004DAD91 /* LXLogStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogStoreManager.h; sourceTree = "<group>"; };
+		46717B4820A2D943004DAD91 /* LXLogStoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogStoreManager.m; sourceTree = "<group>"; };
+		46717B4A20A2D9B6004DAD91 /* LXLogConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogConfig.h; sourceTree = "<group>"; };
+		46717B4B20A2D9B6004DAD91 /* LXLogConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogConfig.m; sourceTree = "<group>"; };
+		46717B4D20A2DE28004DAD91 /* LXLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogModel.h; sourceTree = "<group>"; };
+		46717B4E20A2DE28004DAD91 /* LXLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogModel.m; sourceTree = "<group>"; };
+		46717B5020A2EB0F004DAD91 /* LXLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLog.h; sourceTree = "<group>"; };
+		46717B5120A2F5CF004DAD91 /* LXLogCompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogCompat.h; sourceTree = "<group>"; };
+		46717B5220A2F5CF004DAD91 /* LXLogCompat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogCompat.m; sourceTree = "<group>"; };
+		46717B5520A2F8BC004DAD91 /* NSString+LXLogDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXLogDate.h"; sourceTree = "<group>"; };
+		46717B5620A2F8BC004DAD91 /* NSString+LXLogDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXLogDate.m"; sourceTree = "<group>"; };
+		46717B5820A301C0004DAD91 /* LXLogHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogHelper.h; sourceTree = "<group>"; };
+		46717B5920A301C0004DAD91 /* LXLogHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogHelper.m; sourceTree = "<group>"; };
 		46724CE0209A9CEC00FE09E7 /* LXLogViewPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXLogViewPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46724CE3209A9CEC00FE09E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46724CE4209A9CEC00FE09E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,17 +76,22 @@
 		46724CEF209A9CEC00FE09E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46724CF1209A9CEC00FE09E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46724CF2209A9CEC00FE09E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		46724CFA209A9EA500FE09E7 /* LXLogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogView.h; sourceTree = "<group>"; };
-		46724CFB209A9EA500FE09E7 /* LXLogView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogView.m; sourceTree = "<group>"; };
-		46724CFD209AA0D200FE09E7 /* LXLogTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogTableViewCell.h; sourceTree = "<group>"; };
-		46724CFE209AA0D200FE09E7 /* LXLogTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogTableViewCell.m; sourceTree = "<group>"; };
-		46724D00209AA11200FE09E7 /* LXLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogModel.h; sourceTree = "<group>"; };
-		46724D01209AA11200FE09E7 /* LXLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogModel.m; sourceTree = "<group>"; };
-		46724D03209B11DF00FE09E7 /* LXLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogManager.h; sourceTree = "<group>"; };
-		46724D04209B11DF00FE09E7 /* LXLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogManager.m; sourceTree = "<group>"; };
-		46724D06209B173500FE09E7 /* NSString+StringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
-		46724D07209B173500FE09E7 /* NSString+StringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSize.m"; sourceTree = "<group>"; };
-		8A3ADF99209B4F4B00067D2A /* LXLogPods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogPods.h; sourceTree = "<group>"; };
+		467C168F20A3CEEF00A58BDD /* LXLogGlobalConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogGlobalConst.h; sourceTree = "<group>"; };
+		467C169020A3CEEF00A58BDD /* LXLogGlobalConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogGlobalConst.m; sourceTree = "<group>"; };
+		467C169220A3D15D00A58BDD /* LXLogConsoleTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogConsoleTVCell.h; sourceTree = "<group>"; };
+		467C169320A3D15D00A58BDD /* LXLogConsoleTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogConsoleTVCell.m; sourceTree = "<group>"; };
+		467C169520A3D4FE00A58BDD /* NSString+StringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
+		467C169620A3D4FE00A58BDD /* NSString+StringSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSize.m"; sourceTree = "<group>"; };
+		467C169820A42A5000A58BDD /* LXLogMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogMarco.h; sourceTree = "<group>"; };
+		467C169A20A4332100A58BDD /* tabbar_app@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_app@2x.png"; sourceTree = "<group>"; };
+		467C169B20A4332100A58BDD /* tabbar_console@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_console@2x.png"; sourceTree = "<group>"; };
+		467C169C20A4332100A58BDD /* tabbar_sandbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_sandbox@2x.png"; sourceTree = "<group>"; };
+		467C16A120A44BA600A58BDD /* LXLogAppInfoTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogAppInfoTVCell.h; sourceTree = "<group>"; };
+		467C16A220A44BA600A58BDD /* LXLogAppInfoTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogAppInfoTVCell.m; sourceTree = "<group>"; };
+		467C16A420A4569C00A58BDD /* NSString+LXLogDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXLogDeviceInfo.h"; sourceTree = "<group>"; };
+		467C16A520A4569C00A58BDD /* NSString+LXLogDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXLogDeviceInfo.m"; sourceTree = "<group>"; };
+		DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXLogViewPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F362BBAF578A3FE6D9D26AA1 /* Pods-LXLogViewPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLogViewPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +99,141 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF044AF8B837E6F074925038 /* Pods_LXLogViewPods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391D9C6D6DE4A73C7BA28B09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46717B1F20A2A294004DAD91 /* LXLogTabbarC */ = {
+			isa = PBXGroup;
+			children = (
+				46717B5020A2EB0F004DAD91 /* LXLog.h */,
+				467C168E20A3CEB900A58BDD /* LXConfig */,
+				46717B5420A2F859004DAD91 /* LXLogCategory */,
+				46717B2420A2A4D9004DAD91 /* BaseNavigationC */,
+				46717B2020A2A340004DAD91 /* TabbarC */,
+				46717B2820A2A6B7004DAD91 /* SubVC */,
+				46717B4620A2D830004DAD91 /* Log */,
+				467C16A020A441D600A58BDD /* APP */,
+				46717B3F20A2CD7A004DAD91 /* FPS */,
+				467C168620A3CAA800A58BDD /* Resources */,
+			);
+			path = LXLogTabbarC;
+			sourceTree = "<group>";
+		};
+		46717B2020A2A340004DAD91 /* TabbarC */ = {
+			isa = PBXGroup;
+			children = (
+				46717B2120A2A37E004DAD91 /* LXLogTabBarController.h */,
+				46717B2220A2A37E004DAD91 /* LXLogTabBarController.m */,
+			);
+			path = TabbarC;
+			sourceTree = "<group>";
+		};
+		46717B2420A2A4D9004DAD91 /* BaseNavigationC */ = {
+			isa = PBXGroup;
+			children = (
+				46717B2520A2A52F004DAD91 /* LXLogBaseNaigationController.h */,
+				46717B2620A2A52F004DAD91 /* LXLogBaseNaigationController.m */,
+			);
+			path = BaseNavigationC;
+			sourceTree = "<group>";
+		};
+		46717B2820A2A6B7004DAD91 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				46717B2920A2A6D9004DAD91 /* Console（控制台） */,
+				46717B2A20A2A70B004DAD91 /* AppInfo（设备详情） */,
+				46717B2B20A2A72E004DAD91 /* Sandbox（沙盒文件） */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		46717B2920A2A6D9004DAD91 /* Console（控制台） */ = {
+			isa = PBXGroup;
+			children = (
+				46717B3620A2A7BA004DAD91 /* LXLogConsoleViewController.h */,
+				46717B3720A2A7BA004DAD91 /* LXLogConsoleViewController.m */,
+				467C169220A3D15D00A58BDD /* LXLogConsoleTVCell.h */,
+				467C169320A3D15D00A58BDD /* LXLogConsoleTVCell.m */,
+			);
+			path = "Console（控制台）";
+			sourceTree = "<group>";
+		};
+		46717B2A20A2A70B004DAD91 /* AppInfo（设备详情） */ = {
+			isa = PBXGroup;
+			children = (
+				46717B3920A2A7C9004DAD91 /* LXLogAppInfoViewController.h */,
+				46717B3A20A2A7C9004DAD91 /* LXLogAppInfoViewController.m */,
+				467C16A120A44BA600A58BDD /* LXLogAppInfoTVCell.h */,
+				467C16A220A44BA600A58BDD /* LXLogAppInfoTVCell.m */,
+			);
+			path = "AppInfo（设备详情）";
+			sourceTree = "<group>";
+		};
+		46717B2B20A2A72E004DAD91 /* Sandbox（沙盒文件） */ = {
+			isa = PBXGroup;
+			children = (
+				46717B3C20A2A7D7004DAD91 /* LXLogSandboxViewController.h */,
+				46717B3D20A2A7D7004DAD91 /* LXLogSandboxViewController.m */,
+			);
+			path = "Sandbox（沙盒文件）";
+			sourceTree = "<group>";
+		};
+		46717B3F20A2CD7A004DAD91 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				46717B4020A2CD90004DAD91 /* WeakProxy.h */,
+				46717B4120A2CD90004DAD91 /* WeakProxy.m */,
+				46717B4220A2CD90004DAD91 /* FPSLabel.h */,
+				46717B4320A2CD90004DAD91 /* FPSLabel.m */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		46717B4620A2D830004DAD91 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				46717B4720A2D943004DAD91 /* LXLogStoreManager.h */,
+				46717B4820A2D943004DAD91 /* LXLogStoreManager.m */,
+				46717B4D20A2DE28004DAD91 /* LXLogModel.h */,
+				46717B4E20A2DE28004DAD91 /* LXLogModel.m */,
+				46717B5820A301C0004DAD91 /* LXLogHelper.h */,
+				46717B5920A301C0004DAD91 /* LXLogHelper.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		46717B5420A2F859004DAD91 /* LXLogCategory */ = {
+			isa = PBXGroup;
+			children = (
+				467C169520A3D4FE00A58BDD /* NSString+StringSize.h */,
+				467C169620A3D4FE00A58BDD /* NSString+StringSize.m */,
+				46717B5520A2F8BC004DAD91 /* NSString+LXLogDate.h */,
+				46717B5620A2F8BC004DAD91 /* NSString+LXLogDate.m */,
+				467C16A420A4569C00A58BDD /* NSString+LXLogDeviceInfo.h */,
+				467C16A520A4569C00A58BDD /* NSString+LXLogDeviceInfo.m */,
+			);
+			path = LXLogCategory;
+			sourceTree = "<group>";
+		};
 		46724CD7209A9CEC00FE09E7 = {
 			isa = PBXGroup;
 			children = (
 				46724CE2209A9CEC00FE09E7 /* LXLogViewPods */,
 				46724CE1209A9CEC00FE09E7 /* Products */,
+				476389CC84A341EEC1E51FB7 /* Pods */,
+				391D9C6D6DE4A73C7BA28B09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,7 +248,7 @@
 		46724CE2209A9CEC00FE09E7 /* LXLogViewPods */ = {
 			isa = PBXGroup;
 			children = (
-				46724CF9209A9D9F00FE09E7 /* LXLogView */,
+				46717B1F20A2A294004DAD91 /* LXLogTabbarC */,
 				46724CE3209A9CEC00FE09E7 /* AppDelegate.h */,
 				46724CE4209A9CEC00FE09E7 /* AppDelegate.m */,
 				46724CE6209A9CEC00FE09E7 /* ViewController.h */,
@@ -88,22 +262,52 @@
 			path = LXLogViewPods;
 			sourceTree = "<group>";
 		};
-		46724CF9209A9D9F00FE09E7 /* LXLogView */ = {
+		467C168620A3CAA800A58BDD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8A3ADF99209B4F4B00067D2A /* LXLogPods.h */,
-				46724CFA209A9EA500FE09E7 /* LXLogView.h */,
-				46724CFB209A9EA500FE09E7 /* LXLogView.m */,
-				46724CFD209AA0D200FE09E7 /* LXLogTableViewCell.h */,
-				46724CFE209AA0D200FE09E7 /* LXLogTableViewCell.m */,
-				46724D00209AA11200FE09E7 /* LXLogModel.h */,
-				46724D01209AA11200FE09E7 /* LXLogModel.m */,
-				46724D03209B11DF00FE09E7 /* LXLogManager.h */,
-				46724D04209B11DF00FE09E7 /* LXLogManager.m */,
-				46724D06209B173500FE09E7 /* NSString+StringSize.h */,
-				46724D07209B173500FE09E7 /* NSString+StringSize.m */,
+				467C169920A4332100A58BDD /* Image */,
 			);
-			path = LXLogView;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		467C168E20A3CEB900A58BDD /* LXConfig */ = {
+			isa = PBXGroup;
+			children = (
+				467C169820A42A5000A58BDD /* LXLogMarco.h */,
+				46717B4A20A2D9B6004DAD91 /* LXLogConfig.h */,
+				46717B4B20A2D9B6004DAD91 /* LXLogConfig.m */,
+				467C168F20A3CEEF00A58BDD /* LXLogGlobalConst.h */,
+				467C169020A3CEEF00A58BDD /* LXLogGlobalConst.m */,
+				46717B5120A2F5CF004DAD91 /* LXLogCompat.h */,
+				46717B5220A2F5CF004DAD91 /* LXLogCompat.m */,
+			);
+			path = LXConfig;
+			sourceTree = "<group>";
+		};
+		467C169920A4332100A58BDD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				467C169A20A4332100A58BDD /* tabbar_app@2x.png */,
+				467C169B20A4332100A58BDD /* tabbar_console@2x.png */,
+				467C169C20A4332100A58BDD /* tabbar_sandbox@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		467C16A020A441D600A58BDD /* APP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		476389CC84A341EEC1E51FB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F6EE394450C862DD17033F0 /* Pods-LXLogViewPods.debug.xcconfig */,
+				F362BBAF578A3FE6D9D26AA1 /* Pods-LXLogViewPods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46724CF6209A9CEC00FE09E7 /* Build configuration list for PBXNativeTarget "LXLogViewPods" */;
 			buildPhases = (
+				8E4500508394AC30D8DF587B /* [CP] Check Pods Manifest.lock */,
 				46724CDC209A9CEC00FE09E7 /* Sources */,
 				46724CDD209A9CEC00FE09E7 /* Frameworks */,
 				46724CDE209A9CEC00FE09E7 /* Resources */,
+				AEA198B0AD06F982C73A61BA /* [CP] Embed Pods Frameworks */,
+				9EE23E7A666958FB5AE6B21D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,27 +371,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467C169F20A4332100A58BDD /* tabbar_sandbox@2x.png in Resources */,
 				46724CF0209A9CEC00FE09E7 /* LaunchScreen.storyboard in Resources */,
 				46724CED209A9CEC00FE09E7 /* Assets.xcassets in Resources */,
+				467C169E20A4332100A58BDD /* tabbar_console@2x.png in Resources */,
+				467C169D20A4332100A58BDD /* tabbar_app@2x.png in Resources */,
 				46724CEB209A9CEC00FE09E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E4500508394AC30D8DF587B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE23E7A666958FB5AE6B21D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEA198B0AD06F982C73A61BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46724CDC209A9CEC00FE09E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467C16A620A4569C00A58BDD /* NSString+LXLogDeviceInfo.m in Sources */,
+				46717B4420A2CD90004DAD91 /* WeakProxy.m in Sources */,
 				46724CE8209A9CEC00FE09E7 /* ViewController.m in Sources */,
+				46717B2720A2A52F004DAD91 /* LXLogBaseNaigationController.m in Sources */,
 				46724CF3209A9CEC00FE09E7 /* main.m in Sources */,
-				46724D05209B11DF00FE09E7 /* LXLogManager.m in Sources */,
-				46724D02209AA11200FE09E7 /* LXLogModel.m in Sources */,
+				467C169720A3D4FE00A58BDD /* NSString+StringSize.m in Sources */,
+				46717B3B20A2A7C9004DAD91 /* LXLogAppInfoViewController.m in Sources */,
+				46717B4920A2D943004DAD91 /* LXLogStoreManager.m in Sources */,
+				46717B5320A2F5CF004DAD91 /* LXLogCompat.m in Sources */,
+				46717B2320A2A37E004DAD91 /* LXLogTabBarController.m in Sources */,
+				46717B5720A2F8BC004DAD91 /* NSString+LXLogDate.m in Sources */,
 				46724CE5209A9CEC00FE09E7 /* AppDelegate.m in Sources */,
-				46724D08209B173500FE09E7 /* NSString+StringSize.m in Sources */,
-				46724CFC209A9EA500FE09E7 /* LXLogView.m in Sources */,
-				46724CFF209AA0D200FE09E7 /* LXLogTableViewCell.m in Sources */,
+				467C169420A3D15D00A58BDD /* LXLogConsoleTVCell.m in Sources */,
+				467C169120A3CEEF00A58BDD /* LXLogGlobalConst.m in Sources */,
+				46717B3E20A2A7D7004DAD91 /* LXLogSandboxViewController.m in Sources */,
+				46717B4C20A2D9B6004DAD91 /* LXLogConfig.m in Sources */,
+				46717B4520A2CD90004DAD91 /* FPSLabel.m in Sources */,
+				467C16A320A44BA600A58BDD /* LXLogAppInfoTVCell.m in Sources */,
+				46717B4F20A2DE28004DAD91 /* LXLogModel.m in Sources */,
+				46717B5A20A301C0004DAD91 /* LXLogHelper.m in Sources */,
+				46717B3820A2A7BA004DAD91 /* LXLogConsoleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +587,7 @@
 		};
 		46724CF7209A9CEC00FE09E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6EE394450C862DD17033F0 /* Pods-LXLogViewPods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +602,7 @@
 		};
 		46724CF8209A9CEC00FE09E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F362BBAF578A3FE6D9D26AA1 /* Pods-LXLogViewPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_LXLogViewPods {
+  umbrella header "Pods-LXLogViewPods-umbrella.h"
+
+  export *
+  module * { export * }
+}

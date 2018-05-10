@@ -10,8 +10,7 @@
 
 #import "ViewController.h"
 
-#import "LXLogView.h"
-#import "LXLogPods.h"
+#import "LXLog.h"
 
 @interface AppDelegate ()
 
@@ -31,12 +30,29 @@
     UINavigationController *baseNav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = baseNav;
     [self.window makeKeyAndVisible];
+
     
-    LXLogView * view = [[LXLogView alloc]init];
-    [self.window addSubview:view];
+//    FPSLabel * label = [[FPSLabel alloc]initWithFrame:CGRectMake(0, 300, 100, 50)];
+//    label.backgroundColor = [UIColor redColor];
+//    [self.window addSubview:label];
+//    
+//    UIButton * touchbtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 400, 100, 100)];
+//    touchbtn.backgroundColor = [UIColor blackColor];
+//    [touchbtn addTarget:self action:@selector(CallBack) forControlEvents:UIControlEventTouchUpInside];
+//    [self.window addSubview:touchbtn];
+    
+    LXLogConfig * con = [LXLogConfig shared];
+    con.logMaxCount = 10;
     
     
     return YES;
+}
+
+-(void)CallBack
+{
+    LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
+    
+    [self.window.rootViewController presentViewController:tabbarC animated:YES completion:nil];
 }
 
 
