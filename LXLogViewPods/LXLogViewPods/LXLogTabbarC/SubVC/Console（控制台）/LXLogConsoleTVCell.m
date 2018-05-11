@@ -10,7 +10,9 @@
 
 #import "LXLogMarco.h"
 
-static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
+#import <Masonry/Masonry.h>  // 布局依赖下Masonry
+
+static NSString * reuseIdentifier = @"LXLogConsoleTVCell_ID";
 
 @interface LXLogConsoleTVCell (){
     UILabel * timeLabel;
@@ -130,6 +132,53 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
     fengeLable_1.backgroundColor = [UIColor purpleColor];
     fengeLable_2.backgroundColor = [UIColor purpleColor];
     fengeLable_3.backgroundColor = [UIColor purpleColor];
+
+    
+// ================ Masonry ================
+    
+    [timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.top.and.bottom.equalTo(self);
+        make.width.equalTo(self.mas_width).dividedBy(5);
+    }];
+    
+    [threadLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(timeLabel.mas_right);
+        make.top.and.right.equalTo(self);
+        make.height.equalTo(@25);
+    }];
+    
+    [fengeLable_1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(timeLabel.mas_right);
+        make.top.equalTo(threadLabel.mas_bottom);
+        make.right.equalTo(self);
+        make.height.equalTo(@10);
+    }];
+    
+    [detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(timeLabel.mas_right);
+        make.top.equalTo(fengeLable_1.mas_bottom);
+        make.right.equalTo(self);
+        make.height.equalTo(@25);
+    }];
+    
+    [fengeLable_2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(timeLabel.mas_right);
+        make.top.equalTo(detailLabel.mas_bottom);
+        make.right.equalTo(self);
+        make.height.equalTo(@10);
+    }];
+    
+    [fengeLable_3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.bottom.and.right.equalTo(self);
+        make.height.equalTo(@20);
+    }];
+    
+    [contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(timeLabel.mas_right);
+        make.top.equalTo(fengeLable_2.mas_bottom);
+        make.right.equalTo(self);
+        make.bottom.equalTo(fengeLable_3.mas_top);
+    }];
 }
 
 
@@ -143,34 +192,34 @@ static NSString * reuseIdentifier = @"LXLogTableViewCell_ID";
     contentLabel.text = model.Content;
 }
 
-
-// 重绘
-- (void)drawRect:(CGRect)rect {
-    
-    float samllW = screenW/5;
-    float bigW = screenW/5*4;
-    
-    // timelable / detailLabel 高度
-    float h_1 = 25;
-    // fenge_1 / 2 高度
-    float h_2 = 10;
-    // fengge_3 高度
-    float h_3 = 20;
-    
-    timeLabel.frame = CGRectMake(0, 0, samllW, rect.size.height - h_3);
-    
-    threadLabel.frame = CGRectMake(samllW, 0, bigW, h_1);
-    
-    fengeLable_1.frame = CGRectMake(samllW, h_1, bigW, h_2);
-    
-    detailLabel.frame = CGRectMake(samllW, h_1 + h_2, bigW, h_1);
-    
-    fengeLable_2.frame = CGRectMake(samllW, h_1 + h_2 + h_1, bigW, h_2);
-    
-    contentLabel.frame = CGRectMake(samllW, h_1 + h_2 + h_1 + h_2, bigW, rect.size.height - (h_1 + h_2 + h_1 + h_2 + h_3));
-    
-    fengeLable_3.frame = CGRectMake(0, rect.size.height - h_3, rect.size.width, h_3);
-}
+//
+//// 重绘
+//- (void)drawRect:(CGRect)rect {
+//
+//    float samllW = screenW/5;
+//    float bigW = screenW/5*4;
+//
+//    // timelable / detailLabel 高度
+//    float h_1 = 25;
+//    // fenge_1 / 2 高度
+//    float h_2 = 10;
+//    // fengge_3 高度
+//    float h_3 = 20;
+//
+//    timeLabel.frame = CGRectMake(0, 0, samllW, rect.size.height - h_3);
+//
+//    threadLabel.frame = CGRectMake(samllW, 0, bigW, h_1);
+//
+//    fengeLable_1.frame = CGRectMake(samllW, h_1, bigW, h_2);
+//
+//    detailLabel.frame = CGRectMake(samllW, h_1 + h_2, bigW, h_1);
+//
+//    fengeLable_2.frame = CGRectMake(samllW, h_1 + h_2 + h_1, bigW, h_2);
+//
+//    contentLabel.frame = CGRectMake(samllW, h_1 + h_2 + h_1 + h_2, bigW, rect.size.height - (h_1 + h_2 + h_1 + h_2 + h_3));
+//
+//    fengeLable_3.frame = CGRectMake(0, rect.size.height - h_3, rect.size.width, h_3);
+//}
 
 
 

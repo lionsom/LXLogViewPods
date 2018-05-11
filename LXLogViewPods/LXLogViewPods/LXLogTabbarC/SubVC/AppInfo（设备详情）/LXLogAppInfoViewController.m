@@ -29,9 +29,19 @@
     // 背景颜色
     self.view.backgroundColor = [UIColor greenColor];
     
+    // back btn
+    UIBarButtonItem *backitem=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(closeCallBack)];
+    [self.navigationItem setLeftBarButtonItem:backitem];
+    
+    
+    // 懒加载 tableview
     [self.view addSubview:self.tableView];
 }
 
+#pragma mark - TopBtn CallBack
+-(void)closeCallBack {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 #pragma mark - TableView DataSource
 // Section Number
@@ -42,9 +52,9 @@
 // Rows Number
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 4;
+        return 5;
     }else if (section == 1) {
-        return 3;
+        return 7;
     }else if (section == 2) {
         return 2;
     }
@@ -58,39 +68,59 @@
     LXLogAppInfoTVCell * cell = [LXLogAppInfoTVCell cellWithTableView:tableView];
 
     if (indexPath.section == 0 && indexPath.row == 0) {
-        cell.titleLabel.text = @"Version";
-        cell.detailLabel.text = @"";
+        cell.titleLabel.text = @"Project Name";
+        cell.detailLabel.text = [NSString getAPPInfo_BundleName];
     }
     if (indexPath.section == 0 && indexPath.row == 1) {
-        cell.titleLabel.text = @"Build";
-        cell.detailLabel.text = @"";
+        cell.titleLabel.text = @"APP Name";
+        cell.detailLabel.text = [NSString getAPPInfo_BundleDisplayName];
     }
     if (indexPath.section == 0 && indexPath.row == 2) {
-        cell.titleLabel.text = @"Bundle Name";
-        cell.detailLabel.text = @"";
+        cell.titleLabel.text = @"APP Version";
+        cell.detailLabel.text = [NSString getAPPInfo_BundleShortVersion];
     }
     if (indexPath.section == 0 && indexPath.row == 3) {
-        cell.titleLabel.text = @"Bundle Id";
-        cell.detailLabel.text = @"";
+        cell.titleLabel.text = @"APP Build";
+        cell.detailLabel.text = [NSString getAPPInfo_BundleVersion];
+    }
+    if (indexPath.section == 0 && indexPath.row == 4) {
+        cell.titleLabel.text = @"Bundle Identifier";
+        cell.detailLabel.text = [NSString getAPPInfo_BundleIdentifier];
     }
     if (indexPath.section == 1 && indexPath.row == 0) {
         cell.titleLabel.text = @"Screen Size";
         cell.detailLabel.text = [NSString getDeviceScreenSize];
     }
     if (indexPath.section == 1 && indexPath.row == 1) {
-        cell.titleLabel.text = @"Device";
-        cell.detailLabel.text = @"";
+        cell.titleLabel.text = @"设备型号";
+        cell.detailLabel.text = [NSString getDeviceName];
     }
     if (indexPath.section == 1 && indexPath.row == 2) {
-        cell.titleLabel.text = @"iOS Version";
-        cell.detailLabel.text = @"";
+        cell.titleLabel.text = @"system name";
+        cell.detailLabel.text = [NSString getSystemName];
+    }
+    if (indexPath.section == 1 && indexPath.row == 3) {
+        cell.titleLabel.text = @"system Version";
+        cell.detailLabel.text = [NSString getSystemVersion];
+    }
+    if (indexPath.section == 1 && indexPath.row == 4) {
+        cell.titleLabel.text = @"User name";
+        cell.detailLabel.text = [NSString getiPhoneName];
+    }
+    if (indexPath.section == 1 && indexPath.row == 5) {
+        cell.titleLabel.text = @"设备内存";
+        cell.detailLabel.text = [NSString getTotalMemorySize];
+    }
+    if (indexPath.section == 1 && indexPath.row == 6) {
+        cell.titleLabel.text = @"当前语言";
+        cell.detailLabel.text = [NSString getDeviceLanguage];
     }
     if (indexPath.section == 2 && indexPath.row == 0) {
         cell.titleLabel.text = @"Lionsom's Blog";
         cell.detailLabel.text = @"http://lionsom.com";
     }
     if (indexPath.section == 2 && indexPath.row == 1) {
-        cell.titleLabel.text = @"jianshu";
+        cell.titleLabel.text = @"Lionsom's 简书";
         cell.detailLabel.text = @"enter";
     }
  

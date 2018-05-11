@@ -41,8 +41,8 @@
 //    [touchbtn addTarget:self action:@selector(CallBack) forControlEvents:UIControlEventTouchUpInside];
 //    [self.window addSubview:touchbtn];
     
-    LXLogConfig * con = [LXLogConfig shared];
-    con.logMaxCount = 10;
+//    LXLogConfig * con = [LXLogConfig shared];
+//    con.logMaxCount = 20;
     
     
     return YES;

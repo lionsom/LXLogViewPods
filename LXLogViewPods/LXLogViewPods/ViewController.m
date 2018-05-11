@@ -30,35 +30,12 @@
     
     [self createBtn:CGRectMake(W, H, W, H) :2 :@"load"];
     
-    [self createBtn:CGRectMake(0, H*2, W, H) :3 :@"clear"];
+    [self createBtn:CGRectMake(0, H*2, W, H) :3 :@"Tabbar"];
 
-    [self createBtn:CGRectMake(W, H*2, W, H) :4 :@"Tabbar"];
-
-
+    
     NSString * b = @"sdfdsadsaf";
     LXLog(@"%@",b);
-    
-    NSArray *a = @[@1,@2,@3,@4,@5];
-    LXLog(@"DD == %@",a);
 
-    LXLog(@"A = %@",@"sdafasdfaafasdfasddsaffasdfdssadfasdasdfadsdfasdasfafasdfasddsaffasdfdssadfasdasdfadsdfasdasffadsdfasdasf");
-
-    NSDictionary * dict = @{@"A":@"123",
-                            @"B":@"456",
-                            @"C":@"678",
-                            @"D":@"999"
-                            };
-    LXLog(@"NSDictionary = %@",dict);
-    
-    NSDate * date = [NSDate date];
-    LXLog(@"%@",date);
-    
-    
-    // 第三种：最常用
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        LXLog(@"NSDictionary = %@",dict);
-    });//定制了延时执行的任务，不会阻塞线程，效率较高（推荐使用）
-    
 }
 
 
@@ -89,10 +66,6 @@
         }
     }
     if (btn.tag == 3) {
-
-        
-    }
-    if (btn.tag == 4) {
         
         LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
         

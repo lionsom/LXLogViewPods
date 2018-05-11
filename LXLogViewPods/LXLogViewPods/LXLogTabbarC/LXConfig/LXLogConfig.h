@@ -12,7 +12,7 @@
 @interface LXLogConfig : NSObject
 
 /**
- * the maximum count of logs which LXLog display. default value is `20`.
+ * the maximum count of logs which LXLog display. default value is `NSIntegerMax`.
  */
 @property (nonatomic, assign) NSInteger logMaxCount;
 

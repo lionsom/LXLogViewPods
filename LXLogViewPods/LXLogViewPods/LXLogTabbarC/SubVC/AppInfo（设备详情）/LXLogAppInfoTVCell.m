@@ -75,15 +75,13 @@ static NSString * reuseIdentifier = @"LXLogAppInfoTVCell_ID";
     _detailLabel.backgroundColor = [UIColor clearColor];
     [self addSubview:_detailLabel];
     
+    _titleLabel.frame = CGRectMake(20, 0, screenW/2, self.frame.size.height);
+    _detailLabel.frame = CGRectMake(screenW/2 - 20, 0, screenW/2, self.frame.size.height);
 }
 
 //  自绘分割线 重写即可
 - (void)drawRect:(CGRect)rect
 {
-    //
-    _titleLabel.frame = CGRectMake(20, 0, screenW/2, self.frame.size.height);
-    _detailLabel.frame = CGRectMake(screenW/2 - 20, 0, screenW/2, self.frame.size.height);
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);

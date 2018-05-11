@@ -8,7 +8,7 @@
 
 #import "LXLogConfig.h"
 
-static const NSInteger kDefaultLogMaxCount = 20;
+static const NSInteger kDefaultLogMaxCount = NSIntegerMax;
 
 
 @implementation LXLogConfig

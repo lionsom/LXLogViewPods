@@ -10,6 +10,8 @@
 
 #import "LXLogCompat.h"
 
+#import "LXLogGlobalConst.h"
+
 @implementation LXLogStoreManager
 
 
@@ -62,6 +64,14 @@
             [_defaultLogArr removeObjectAtIndex:i];
         }
     }
+    
+    // 主线程发送通知，刷新界面
+    dispatch_main_async_safe(^{
+        // 创建通知
+        NSNotification *notification = [NSNotification notificationWithName:KNotification_RefreshLXLog object:nil userInfo:nil];
+        // 通过通知中心发送通知
+        [[NSNotificationCenter defaultCenter] postNotification:notification];
+    });
 }
 
 /**
@@ -70,6 +80,14 @@
 -(void)resetLXLogs {
     // 移除所有数据
     [_defaultLogArr removeAllObjects];
+    
+    // 主线程发送通知，刷新界面
+    dispatch_main_async_safe(^{
+        // 创建通知
+        NSNotification *notification = [NSNotification notificationWithName:KNotification_RefreshLXLog object:nil userInfo:nil];
+        // 通过通知中心发送通知
+        [[NSNotificationCenter defaultCenter] postNotification:notification];
+    });
 }
 
 

@@ -34,6 +34,8 @@
 		467C169F20A4332100A58BDD /* tabbar_sandbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467C169C20A4332100A58BDD /* tabbar_sandbox@2x.png */; };
 		467C16A320A44BA600A58BDD /* LXLogAppInfoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C16A220A44BA600A58BDD /* LXLogAppInfoTVCell.m */; };
 		467C16A620A4569C00A58BDD /* NSString+LXLogDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C16A520A4569C00A58BDD /* NSString+LXLogDeviceInfo.m */; };
+		46A8AC8E20A538C000E1C6B6 /* NSArray+LXLogChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */; };
+		46A8AC9120A54AF200E1C6B6 /* NSDictionary+LXLogChese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */; };
 		FF044AF8B837E6F074925038 /* Pods_LXLogViewPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,10 @@
 		467C16A220A44BA600A58BDD /* LXLogAppInfoTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogAppInfoTVCell.m; sourceTree = "<group>"; };
 		467C16A420A4569C00A58BDD /* NSString+LXLogDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXLogDeviceInfo.h"; sourceTree = "<group>"; };
 		467C16A520A4569C00A58BDD /* NSString+LXLogDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXLogDeviceInfo.m"; sourceTree = "<group>"; };
+		46A8AC8C20A538C000E1C6B6 /* NSArray+LXLogChinese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+LXLogChinese.h"; sourceTree = "<group>"; };
+		46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LXLogChinese.m"; sourceTree = "<group>"; };
+		46A8AC8F20A54AF200E1C6B6 /* NSDictionary+LXLogChese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LXLogChese.h"; sourceTree = "<group>"; };
+		46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LXLogChese.m"; sourceTree = "<group>"; };
 		DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXLogViewPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F362BBAF578A3FE6D9D26AA1 /* Pods-LXLogViewPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLogViewPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +229,10 @@
 				46717B5620A2F8BC004DAD91 /* NSString+LXLogDate.m */,
 				467C16A420A4569C00A58BDD /* NSString+LXLogDeviceInfo.h */,
 				467C16A520A4569C00A58BDD /* NSString+LXLogDeviceInfo.m */,
+				46A8AC8C20A538C000E1C6B6 /* NSArray+LXLogChinese.h */,
+				46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */,
+				46A8AC8F20A54AF200E1C6B6 /* NSDictionary+LXLogChese.h */,
+				46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */,
 			);
 			path = LXLogCategory;
 			sourceTree = "<group>";
@@ -444,9 +454,11 @@
 				46717B3B20A2A7C9004DAD91 /* LXLogAppInfoViewController.m in Sources */,
 				46717B4920A2D943004DAD91 /* LXLogStoreManager.m in Sources */,
 				46717B5320A2F5CF004DAD91 /* LXLogCompat.m in Sources */,
+				46A8AC8E20A538C000E1C6B6 /* NSArray+LXLogChinese.m in Sources */,
 				46717B2320A2A37E004DAD91 /* LXLogTabBarController.m in Sources */,
 				46717B5720A2F8BC004DAD91 /* NSString+LXLogDate.m in Sources */,
 				46724CE5209A9CEC00FE09E7 /* AppDelegate.m in Sources */,
+				46A8AC9120A54AF200E1C6B6 /* NSDictionary+LXLogChese.m in Sources */,
 				467C169420A3D15D00A58BDD /* LXLogConsoleTVCell.m in Sources */,
 				467C169120A3CEEF00A58BDD /* LXLogGlobalConst.m in Sources */,
 				46717B3E20A2A7D7004DAD91 /* LXLogSandboxViewController.m in Sources */,
@@ -591,8 +603,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL2VP3W5B3;
+				DEVELOPMENT_TEAM = 2STZ5AM32F;
 				INFOPLIST_FILE = LXLogViewPods/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LX.LXLogViewPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,8 +619,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL2VP3W5B3;
+				DEVELOPMENT_TEAM = 2STZ5AM32F;
 				INFOPLIST_FILE = LXLogViewPods/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LX.LXLogViewPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
