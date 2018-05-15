@@ -1,15 +1,15 @@
 //
-//  NSString+StringSize.h
+//  NSString+LXLogStringSize.h
 //  LXLogViewPods
 //
-//  Created by linxiang on 2018/5/3.
+//  Created by linxiang on 2018/5/14.
 //  Copyright © 2018年 LX. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface NSString (StringSize)
+@interface NSString (LXLogStringSize)
 
 /**
  *  简单计算textsize

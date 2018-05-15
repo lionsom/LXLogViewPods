@@ -11,6 +11,7 @@
 
 #import "LXLogHelper.h"
 
+
 #ifdef DEBUG
 // 这里执行的是debug模式下
 #define LXLog(fmt ,...) [LXLogHelper handleLog:[[NSString stringWithUTF8String:__FILE__] lastPathComponent] :NSStringFromSelector(_cmd) :[NSString stringWithFormat:@"%d",__LINE__] :(fmt), ##__VA_ARGS__]; \

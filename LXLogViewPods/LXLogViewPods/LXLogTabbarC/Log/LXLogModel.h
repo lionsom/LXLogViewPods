@@ -55,14 +55,16 @@ typedef NS_ENUM(NSInteger, LXLogType) {
  */
 -(instancetype)init;
 
+
 /**
  常用init
-
+ 
+ @param thread 当前线程
  @param fileinfo 当前文件具体信息
  @param content log具体内容
  @return self
  */
--(instancetype)initWithFileInfo:(NSString *)fileinfo Content:(NSString *)content;
+-(instancetype)initWithThread:(NSString *)thread FileInfo:(NSString *)fileinfo Content:(NSString *)content ;
 
 
 /**
@@ -75,6 +77,7 @@ typedef NS_ENUM(NSInteger, LXLogType) {
  @return self
  */
 -(instancetype)initWithThread:(NSString *)thread FileInfo:(NSString *)fileinfo Content:(NSString *)content Type:(LXLogType)type;
+
 
 
 @end

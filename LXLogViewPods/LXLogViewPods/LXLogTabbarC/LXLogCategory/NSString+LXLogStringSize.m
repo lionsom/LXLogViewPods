@@ -1,14 +1,14 @@
 //
-//  NSString+StringSize.m
+//  NSString+LXLogStringSize.m
 //  LXLogViewPods
 //
-//  Created by linxiang on 2018/5/3.
+//  Created by linxiang on 2018/5/14.
 //  Copyright © 2018年 LX. All rights reserved.
 //
 
-#import "NSString+StringSize.h"
+#import "NSString+LXLogStringSize.h"
 
-@implementation NSString (StringSize)
+@implementation NSString (LXLogStringSize)
 
 - (CGSize)sizeWithLabelWidth:(CGFloat)width font:(UIFont *)font{
     NSDictionary *dict=@{NSFontAttributeName : font};

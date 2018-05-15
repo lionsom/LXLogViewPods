@@ -32,28 +32,56 @@
     [self.window makeKeyAndVisible];
 
     
-//    FPSLabel * label = [[FPSLabel alloc]initWithFrame:CGRectMake(0, 300, 100, 50)];
-//    label.backgroundColor = [UIColor redColor];
-//    [self.window addSubview:label];
-//    
-//    UIButton * touchbtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 400, 100, 100)];
-//    touchbtn.backgroundColor = [UIColor blackColor];
-//    [touchbtn addTarget:self action:@selector(CallBack) forControlEvents:UIControlEventTouchUpInside];
-//    [self.window addSubview:touchbtn];
+
     
-//    LXLogConfig * con = [LXLogConfig shared];
-//    con.logMaxCount = 20;
+    UIButton * touchbtn = [[UIButton alloc]initWithFrame:CGRectMake(0, screenH - 160, 100, 50)];
+    touchbtn.backgroundColor = [UIColor lightGrayColor];
+    [touchbtn addTarget:self action:@selector(CallBack) forControlEvents:UIControlEventTouchUpInside];
+    [touchbtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.window addSubview:touchbtn];
+    
+    FPSLabel * label = [[FPSLabel alloc]init];
+    label.backgroundColor = [UIColor clearColor];
+    label.frame = CGRectMake(0, 0, touchbtn.frame.size.width, touchbtn.frame.size.height);
+    [touchbtn addSubview:label];
+    
+    // 设置最大log数量
+    LXLogConfig * con = [LXLogConfig shared];
+    con.logMaxCount = 5;
     
     
     return YES;
 }
 
 -(void)CallBack
-{
+{    
     LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
     
     [self.window.rootViewController presentViewController:tabbarC animated:YES completion:nil];
 }
+
+/*  获取最上层的 ViewController
+- (UIViewController*)topViewController
+{
+    return [self topViewControllerWithRootViewController:self.window.rootViewController];
+}
+
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController
+{
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabBarController = (UITabBarController *)rootViewController;
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        return [self topViewControllerWithRootViewController:navigationController.visibleViewController];
+    } else if (rootViewController.presentedViewController) {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self topViewControllerWithRootViewController:presentedViewController];
+    } else {
+        return rootViewController;
+    }
+}
+*/
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

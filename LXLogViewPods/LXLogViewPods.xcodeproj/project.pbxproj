@@ -28,7 +28,6 @@
 		46724CF3209A9CEC00FE09E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46724CF2209A9CEC00FE09E7 /* main.m */; };
 		467C169120A3CEEF00A58BDD /* LXLogGlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C169020A3CEEF00A58BDD /* LXLogGlobalConst.m */; };
 		467C169420A3D15D00A58BDD /* LXLogConsoleTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C169320A3D15D00A58BDD /* LXLogConsoleTVCell.m */; };
-		467C169720A3D4FE00A58BDD /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C169620A3D4FE00A58BDD /* NSString+StringSize.m */; };
 		467C169D20A4332100A58BDD /* tabbar_app@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467C169A20A4332100A58BDD /* tabbar_app@2x.png */; };
 		467C169E20A4332100A58BDD /* tabbar_console@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467C169B20A4332100A58BDD /* tabbar_console@2x.png */; };
 		467C169F20A4332100A58BDD /* tabbar_sandbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 467C169C20A4332100A58BDD /* tabbar_sandbox@2x.png */; };
@@ -36,6 +35,8 @@
 		467C16A620A4569C00A58BDD /* NSString+LXLogDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C16A520A4569C00A58BDD /* NSString+LXLogDeviceInfo.m */; };
 		46A8AC8E20A538C000E1C6B6 /* NSArray+LXLogChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */; };
 		46A8AC9120A54AF200E1C6B6 /* NSDictionary+LXLogChese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */; };
+		46D7B59C20A986D0008310A7 /* NSString+LXLogStringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7B59B20A986D0008310A7 /* NSString+LXLogStringSize.m */; };
+		46D7B59E20A989A7008310A7 /* LXLogPods.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46D7B59D20A989A7008310A7 /* LXLogPods.bundle */; };
 		FF044AF8B837E6F074925038 /* Pods_LXLogViewPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,8 +83,6 @@
 		467C169020A3CEEF00A58BDD /* LXLogGlobalConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogGlobalConst.m; sourceTree = "<group>"; };
 		467C169220A3D15D00A58BDD /* LXLogConsoleTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogConsoleTVCell.h; sourceTree = "<group>"; };
 		467C169320A3D15D00A58BDD /* LXLogConsoleTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogConsoleTVCell.m; sourceTree = "<group>"; };
-		467C169520A3D4FE00A58BDD /* NSString+StringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
-		467C169620A3D4FE00A58BDD /* NSString+StringSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSize.m"; sourceTree = "<group>"; };
 		467C169820A42A5000A58BDD /* LXLogMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogMarco.h; sourceTree = "<group>"; };
 		467C169A20A4332100A58BDD /* tabbar_app@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_app@2x.png"; sourceTree = "<group>"; };
 		467C169B20A4332100A58BDD /* tabbar_console@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_console@2x.png"; sourceTree = "<group>"; };
@@ -96,6 +95,9 @@
 		46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LXLogChinese.m"; sourceTree = "<group>"; };
 		46A8AC8F20A54AF200E1C6B6 /* NSDictionary+LXLogChese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LXLogChese.h"; sourceTree = "<group>"; };
 		46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LXLogChese.m"; sourceTree = "<group>"; };
+		46D7B59A20A986D0008310A7 /* NSString+LXLogStringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXLogStringSize.h"; sourceTree = "<group>"; };
+		46D7B59B20A986D0008310A7 /* NSString+LXLogStringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXLogStringSize.m"; sourceTree = "<group>"; };
+		46D7B59D20A989A7008310A7 /* LXLogPods.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LXLogPods.bundle; sourceTree = "<group>"; };
 		DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXLogViewPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F362BBAF578A3FE6D9D26AA1 /* Pods-LXLogViewPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLogViewPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +132,6 @@
 				46717B2020A2A340004DAD91 /* TabbarC */,
 				46717B2820A2A6B7004DAD91 /* SubVC */,
 				46717B4620A2D830004DAD91 /* Log */,
-				467C16A020A441D600A58BDD /* APP */,
 				46717B3F20A2CD7A004DAD91 /* FPS */,
 				467C168620A3CAA800A58BDD /* Resources */,
 			);
@@ -223,8 +224,8 @@
 		46717B5420A2F859004DAD91 /* LXLogCategory */ = {
 			isa = PBXGroup;
 			children = (
-				467C169520A3D4FE00A58BDD /* NSString+StringSize.h */,
-				467C169620A3D4FE00A58BDD /* NSString+StringSize.m */,
+				46D7B59A20A986D0008310A7 /* NSString+LXLogStringSize.h */,
+				46D7B59B20A986D0008310A7 /* NSString+LXLogStringSize.m */,
 				46717B5520A2F8BC004DAD91 /* NSString+LXLogDate.h */,
 				46717B5620A2F8BC004DAD91 /* NSString+LXLogDate.m */,
 				467C16A420A4569C00A58BDD /* NSString+LXLogDeviceInfo.h */,
@@ -275,6 +276,7 @@
 		467C168620A3CAA800A58BDD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46D7B59D20A989A7008310A7 /* LXLogPods.bundle */,
 				467C169920A4332100A58BDD /* Image */,
 			);
 			path = Resources;
@@ -302,13 +304,6 @@
 				467C169C20A4332100A58BDD /* tabbar_sandbox@2x.png */,
 			);
 			path = Image;
-			sourceTree = "<group>";
-		};
-		467C16A020A441D600A58BDD /* APP */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APP;
 			sourceTree = "<group>";
 		};
 		476389CC84A341EEC1E51FB7 /* Pods */ = {
@@ -385,6 +380,7 @@
 				46724CF0209A9CEC00FE09E7 /* LaunchScreen.storyboard in Resources */,
 				46724CED209A9CEC00FE09E7 /* Assets.xcassets in Resources */,
 				467C169E20A4332100A58BDD /* tabbar_console@2x.png in Resources */,
+				46D7B59E20A989A7008310A7 /* LXLogPods.bundle in Resources */,
 				467C169D20A4332100A58BDD /* tabbar_app@2x.png in Resources */,
 				46724CEB209A9CEC00FE09E7 /* Main.storyboard in Resources */,
 			);
@@ -450,7 +446,6 @@
 				46724CE8209A9CEC00FE09E7 /* ViewController.m in Sources */,
 				46717B2720A2A52F004DAD91 /* LXLogBaseNaigationController.m in Sources */,
 				46724CF3209A9CEC00FE09E7 /* main.m in Sources */,
-				467C169720A3D4FE00A58BDD /* NSString+StringSize.m in Sources */,
 				46717B3B20A2A7C9004DAD91 /* LXLogAppInfoViewController.m in Sources */,
 				46717B4920A2D943004DAD91 /* LXLogStoreManager.m in Sources */,
 				46717B5320A2F5CF004DAD91 /* LXLogCompat.m in Sources */,
@@ -461,6 +456,7 @@
 				46A8AC9120A54AF200E1C6B6 /* NSDictionary+LXLogChese.m in Sources */,
 				467C169420A3D15D00A58BDD /* LXLogConsoleTVCell.m in Sources */,
 				467C169120A3CEEF00A58BDD /* LXLogGlobalConst.m in Sources */,
+				46D7B59C20A986D0008310A7 /* NSString+LXLogStringSize.m in Sources */,
 				46717B3E20A2A7D7004DAD91 /* LXLogSandboxViewController.m in Sources */,
 				46717B4C20A2D9B6004DAD91 /* LXLogConfig.m in Sources */,
 				46717B4520A2CD90004DAD91 /* FPSLabel.m in Sources */,

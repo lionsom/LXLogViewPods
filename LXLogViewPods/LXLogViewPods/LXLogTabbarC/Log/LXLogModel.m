@@ -19,8 +19,8 @@
     return [self initWithThread:@"no thread" FileInfo:@"no fileinfo" Content:@"no content" Type:LXLogTypeDefault];
 }
 
--(instancetype)initWithFileInfo:(NSString *)fileinfo Content:(NSString *)content {
-    return [self initWithThread:@"no thread" FileInfo:fileinfo Content:content Type:LXLogTypeDefault];
+-(instancetype)initWithThread:(NSString *)thread FileInfo:(NSString *)fileinfo Content:(NSString *)content {
+    return [self initWithThread:thread FileInfo:fileinfo Content:content Type:LXLogTypeDefault];
 }
 
 -(instancetype)initWithThread:(NSString *)thread FileInfo:(NSString *)fileinfo Content:(NSString *)content Type:(LXLogType)type{

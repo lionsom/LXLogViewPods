@@ -20,6 +20,13 @@
 
 +(void)handleLog:(NSString *)file :(NSString *)function :(NSString *)line :(NSString *)format, ...{
     
+    NSString * currentThread = @"error";
+    if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {
+        currentThread = @"Main Thread, 我在主线程！";
+    } else {
+        currentThread = @"Sub Thread, 我在子线程！";
+    }
+
     NSString * fileinfo = [NSString stringWithFormat:@"[%@] [%@] [Line:%@]",file,function,line];
     
     // 此段代码参考自CocoaLumberjack框架
@@ -29,8 +36,9 @@
         va_start(args, format);
         
         NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
+
+        LXLogModel * model = [[LXLogModel alloc]initWithThread:currentThread FileInfo:fileinfo Content:message];
         
-        LXLogModel * model = [[LXLogModel alloc]initWithFileInfo:fileinfo Content:message];
         // 添加到store中
         [[LXLogStoreManager shared] addLXLog:model];
         

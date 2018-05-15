@@ -26,16 +26,13 @@
     
     float W = [UIScreen mainScreen].bounds.size.width/2;
     float H = 50;
-    [self createBtn:CGRectMake(0, H, W, H) :1 :@"save"];
+    [self createBtn:CGRectMake(0, 50+H, W, H) :1 :@" Add Log by HTTP"];
     
-    [self createBtn:CGRectMake(W, H, W, H) :2 :@"load"];
+    [self createBtn:CGRectMake(0, 100+H*2, W, H) :2 :@" Add Log in Main Thread"];
     
-    [self createBtn:CGRectMake(0, H*2, W, H) :3 :@"Tabbar"];
+    [self createBtn:CGRectMake(0, 150+H*3, W, H) :3 :@" Add Log in Sub Thread"];
 
-    
-    NSString * b = @"sdfdsadsaf";
-    LXLog(@"%@",b);
-
+    [self createBtn:CGRectMake(0, 200+H*4, W, H) :4 :@"Show LXLog"];
 }
 
 
@@ -62,10 +59,21 @@
     }
     if (btn.tag == 2) {
         if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {
-            LXLog(@"main Thread");
+            LXLog(@"<<%@>>",@"main Thread");
         }
     }
     if (btn.tag == 3) {
+        //创建一个并发队列
+        dispatch_queue_t queue = dispatch_queue_create("myueue", DISPATCH_QUEUE_CONCURRENT);
+        
+        //创建异步任务
+        dispatch_async(queue, ^{
+            for (int i = 0; i < 3; i++) {
+                LXLog(@"--1--%@",[NSThread currentThread]);
+            }
+        });
+    }
+    if (btn.tag == 4) {
         
         LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
         
@@ -77,36 +85,12 @@
 #pragma mark -- CraeteView
 -(void)createBtn:(CGRect)frame :(NSInteger)tag :(NSString *)title {
     UIButton * btn = [[UIButton alloc]initWithFrame:frame];
-    btn.backgroundColor = [UIColor greenColor];
+    btn.backgroundColor = [UIColor blackColor];
     btn.tag = tag;
     [btn setTitle:title forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:30];
     [btn addTarget:self action:@selector(btnCallBack:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-}
-
-
-/**
- 获取当前时间点的具体时间 此处时区为系统时区
- 
- @return @"2011-01-26 17:40:50"
- */
-- (NSString *)getCurrentTime {
-    //1.获取时间戳
-    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
-    NSTimeInterval timeSp = [date timeIntervalSince1970];
-    
-    //2.格式化时间
-    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
-    [formatter setTimeZone:[NSTimeZone systemTimeZone]];   // 手机系统时区，不可改变
-    
-    //3.毫秒值转化为秒
-    NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:timeSp];
-    
-    //4.直接转换
-    NSString *dateString = [formatter stringFromDate:confromTimesp];
-    
-    return dateString;
 }
 
 

@@ -11,7 +11,7 @@
 #import "LXLogConsoleTVCell.h"
 
 // Category
-#import "NSString+StringSize.h"
+#import "NSString+LXLogStringSize.h"
 
 #import "LXLogGlobalConst.h"
 #import "LXLogStoreManager.h"

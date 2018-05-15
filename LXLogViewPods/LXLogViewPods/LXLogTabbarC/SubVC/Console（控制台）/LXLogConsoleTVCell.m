@@ -137,7 +137,8 @@ static NSString * reuseIdentifier = @"LXLogConsoleTVCell_ID";
 // ================ Masonry ================
     
     [timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.and.top.and.bottom.equalTo(self);
+        make.left.and.top.equalTo(self);
+        make.bottom.equalTo(self).offset(-20);
         make.width.equalTo(self.mas_width).dividedBy(5);
     }];
     
