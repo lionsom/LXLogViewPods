@@ -36,7 +36,6 @@
 		46A8AC8E20A538C000E1C6B6 /* NSArray+LXLogChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */; };
 		46A8AC9120A54AF200E1C6B6 /* NSDictionary+LXLogChese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */; };
 		46D7B59C20A986D0008310A7 /* NSString+LXLogStringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7B59B20A986D0008310A7 /* NSString+LXLogStringSize.m */; };
-		46D7B59E20A989A7008310A7 /* LXLogPods.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46D7B59D20A989A7008310A7 /* LXLogPods.bundle */; };
 		FF044AF8B837E6F074925038 /* Pods_LXLogViewPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +96,6 @@
 		46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LXLogChese.m"; sourceTree = "<group>"; };
 		46D7B59A20A986D0008310A7 /* NSString+LXLogStringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXLogStringSize.h"; sourceTree = "<group>"; };
 		46D7B59B20A986D0008310A7 /* NSString+LXLogStringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXLogStringSize.m"; sourceTree = "<group>"; };
-		46D7B59D20A989A7008310A7 /* LXLogPods.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LXLogPods.bundle; sourceTree = "<group>"; };
 		DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXLogViewPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F362BBAF578A3FE6D9D26AA1 /* Pods-LXLogViewPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLogViewPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,7 +274,6 @@
 		467C168620A3CAA800A58BDD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				46D7B59D20A989A7008310A7 /* LXLogPods.bundle */,
 				467C169920A4332100A58BDD /* Image */,
 			);
 			path = Resources;
@@ -380,7 +377,6 @@
 				46724CF0209A9CEC00FE09E7 /* LaunchScreen.storyboard in Resources */,
 				46724CED209A9CEC00FE09E7 /* Assets.xcassets in Resources */,
 				467C169E20A4332100A58BDD /* tabbar_console@2x.png in Resources */,
-				46D7B59E20A989A7008310A7 /* LXLogPods.bundle in Resources */,
 				467C169D20A4332100A58BDD /* tabbar_app@2x.png in Resources */,
 				46724CEB209A9CEC00FE09E7 /* Main.storyboard in Resources */,
 			);

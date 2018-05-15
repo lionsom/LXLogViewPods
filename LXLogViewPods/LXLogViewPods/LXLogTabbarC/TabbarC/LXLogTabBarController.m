@@ -10,6 +10,8 @@
 
 #import "LXLogBaseNaigationController.h"
 
+#import "LXLogMarco.h"
+
 @interface LXLogTabBarController ()
 
 @end
