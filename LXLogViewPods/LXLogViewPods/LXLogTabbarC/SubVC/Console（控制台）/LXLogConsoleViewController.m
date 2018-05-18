@@ -144,22 +144,21 @@
 #pragma mark - CreateView
 -(void)CreateView {
     
-    NSLog(@"screen H = %f", screenH);
-    
-    NSLog(@"self.view H = %f",self.view.frame.size.height);
+//    NSLog(@"screen H = %f", screenH);
+//    NSLog(@"self.view H = %f",self.view.frame.size.height);
     
     // (statusbar)
     CGRect rectOfStatusbar = [[UIApplication sharedApplication] statusBarFrame];
-    NSLog(@"statusbar height: %f", rectOfStatusbar.size.height);   // 高度
+//    NSLog(@"statusbar height: %f", rectOfStatusbar.size.height);   // 高度
     float statusH = rectOfStatusbar.size.height;
     
     // navigationbar height
     CGRect rectOfNavigationbar = self.navigationController.navigationBar.frame;
-    NSLog(@"navigationbar height: %f", rectOfNavigationbar.size.height);   // 高度
+//    NSLog(@"navigationbar height: %f", rectOfNavigationbar.size.height);   // 高度
     float naviBarH = rectOfNavigationbar.size.height;
     
     // tabbar height
-    NSLog(@"tabBar height: %f", self.tabBarController.tabBar.frame.size.height);   // 高度
+//    NSLog(@"tabBar height: %f", self.tabBarController.tabBar.frame.size.height);   // 高度
     float tabbarH = self.tabBarController.tabBar.frame.size.height;
     
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, screenW, screenH - statusH - naviBarH - tabbarH) style:UITableViewStylePlain];

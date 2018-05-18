@@ -15,9 +15,16 @@
 
 // FPS Label View
 #import "FPSLabel.h"
+#import "LXLogMemoryLabel.h"
+
+// 内存
+#import "LXLogMemoryHelper.h"
 
 // tabbarC
 #import "LXLogTabBarController.h"
+
+// Window
+#import "MNAssistiveBtn.h"
 
 
 #endif /* LXLog_h */

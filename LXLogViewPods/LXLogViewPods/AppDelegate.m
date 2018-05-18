@@ -13,7 +13,6 @@
 #import "LXLog.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -21,7 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
     
     //------ 设置主页面 ------
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
@@ -32,32 +30,22 @@
     [self.window makeKeyAndVisible];
 
     
-
-    
-    UIButton * touchbtn = [[UIButton alloc]initWithFrame:CGRectMake(0, screenH - 160, 100, 50)];
-    touchbtn.backgroundColor = [UIColor lightGrayColor];
-    [touchbtn addTarget:self action:@selector(CallBack) forControlEvents:UIControlEventTouchUpInside];
-    [touchbtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [self.window addSubview:touchbtn];
-    
-    FPSLabel * label = [[FPSLabel alloc]init];
-    label.backgroundColor = [UIColor clearColor];
-    label.frame = CGRectMake(0, 0, touchbtn.frame.size.width, touchbtn.frame.size.height);
-    [touchbtn addSubview:label];
-    
     // 设置最大log数量
     LXLogConfig * con = [LXLogConfig shared];
     con.logMaxCount = 5;
     
+    MNAssistiveBtn * btn = [MNAssistiveBtn LX_initWithMoveType:MNAssistiveTouchTypeNone
+                                                      showType:LXLogShowPFSAndMemoryTypeNone
+                                                widthAndHeight:50
+                                               backgroundColor:[UIColor redColor]
+                                               backgroundImage:nil];
+    btn.btncallbackblock = ^{
+        LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
+        [self.window.rootViewController presentViewController:tabbarC animated:YES completion:nil];
+    };
+    [self.window addSubview:btn];
     
     return YES;
-}
-
--(void)CallBack
-{    
-    LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
-    
-    [self.window.rootViewController presentViewController:tabbarC animated:YES completion:nil];
 }
 
 /*  获取最上层的 ViewController
