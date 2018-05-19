@@ -30,6 +30,7 @@
     
     [self createBtn:CGRectMake(0, H*2, W, H) :3 :@"clear"];
 
+    [self createBtn:CGRectMake(W, H*2, W, H) :4 :@"clear"];
 }
 
 
@@ -51,7 +52,10 @@
     if (btn.tag == 3) {
         [LXLogManager clearLXLog];
     }
-    
+    if (btn.tag == 4) {
+        ViewController * vc = [ViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark -- CraeteView
