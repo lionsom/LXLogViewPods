@@ -314,6 +314,12 @@
                 frame = CGRectMake(screenW - frame.size.width, frame.origin.y, frame.size.width, frame.size.height);
             }
             
+            if (frame.origin.y < 20) {
+                frame.origin.y = 20;
+            } else if (frame.origin.y+frame.size.height > screenH) {
+                frame.origin.y = screenH - frame.size.height;
+            }
+            
             //如果越界-跑回来
             [UIView animateWithDuration:0.3 animations:^{
                 self.frame = frame;
