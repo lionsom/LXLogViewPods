@@ -1,0 +1,13 @@
+platform :ios, '8.0'
+
+	target:"LXLogViewPods" do
+    
+	use_frameworks!
+	
+	pod "AFNetworking"
+
+	pod "Masonry"
+	
+	pod "CocoaLumberjack"
+
+end

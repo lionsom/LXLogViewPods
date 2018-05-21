@@ -10,11 +10,9 @@
 
 #import "ViewController.h"
 
-#import "LXLogView.h"
-#import "LXLogPods.h"
+#import "LXLog.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -23,7 +21,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
     //------ 设置主页面 ------
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     self.window.backgroundColor = [UIColor orangeColor];
@@ -31,13 +28,48 @@
     UINavigationController *baseNav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = baseNav;
     [self.window makeKeyAndVisible];
+
     
-    LXLogView * view = [[LXLogView alloc]init];
-    [self.window addSubview:view];
+    // 设置最大log数量
+    LXLogConfig * con = [LXLogConfig shared];
+    con.logMaxCount = 5;
     
+    MNAssistiveBtn * btn = [MNAssistiveBtn LX_initWithMoveType:MNAssistiveTouchTypeNone
+                                                      showType:LXLogShowPFSAndMemoryTypeNone
+                                                widthAndHeight:50
+                                               backgroundColor:[UIColor redColor]
+                                               backgroundImage:nil];
+    btn.btncallbackblock = ^{
+        LXLogTabBarController * tabbarC = [[LXLogTabBarController alloc]init];
+        [self.window.rootViewController presentViewController:tabbarC animated:YES completion:nil];
+    };
+    [self.window addSubview:btn];
     
     return YES;
 }
+
+/*  获取最上层的 ViewController
+- (UIViewController*)topViewController
+{
+    return [self topViewControllerWithRootViewController:self.window.rootViewController];
+}
+
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController
+{
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabBarController = (UITabBarController *)rootViewController;
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        return [self topViewControllerWithRootViewController:navigationController.visibleViewController];
+    } else if (rootViewController.presentedViewController) {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self topViewControllerWithRootViewController:presentedViewController];
+    } else {
+        return rootViewController;
+    }
+}
+*/
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
