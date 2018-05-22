@@ -20,18 +20,23 @@ PODS:
   - CocoaLumberjack/Default (3.4.1)
   - CocoaLumberjack/Extensions (3.4.1):
     - CocoaLumberjack/Default
+  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebUploader (3.4.2):
+    - GCDWebServer/Core
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack
+  - GCDWebServer/WebUploader (~> 3.0)
   - Masonry
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 2d28ac002b058b24cb4d3ba3d24091be6cd4c164
+PODFILE CHECKSUM: 8b442a52565e7ce9335f201f849b3fd6fecdc3ea
 
 COCOAPODS: 1.2.0

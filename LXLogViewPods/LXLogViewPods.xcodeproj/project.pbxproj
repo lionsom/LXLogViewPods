@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4665BB2020B3ED6C00313070 /* PAirSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4665BB1F20B3ED6B00313070 /* PAirSandbox.m */; };
 		46717B2320A2A37E004DAD91 /* LXLogTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B2220A2A37E004DAD91 /* LXLogTabBarController.m */; };
 		46717B2720A2A52F004DAD91 /* LXLogBaseNaigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B2620A2A52F004DAD91 /* LXLogBaseNaigationController.m */; };
 		46717B3820A2A7BA004DAD91 /* LXLogConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46717B3720A2A7BA004DAD91 /* LXLogConsoleViewController.m */; };
@@ -37,6 +38,7 @@
 		467CB33D20AE7B4E0027A90A /* LXLogMemoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 467CB33C20AE7B4E0027A90A /* LXLogMemoryHelper.m */; };
 		467CB33F20AEBA5B0027A90A /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 467CB33E20AEBA5B0027A90A /* Circle.png */; };
 		467CB34220AED4AA0027A90A /* LXLogMemoryLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 467CB34120AED4AA0027A90A /* LXLogMemoryLabel.m */; };
+		4685ACE720B3BC3A003A5A1C /* LXLogSandbox_GCDWebServerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685ACE620B3BC3A003A5A1C /* LXLogSandbox_GCDWebServerVC.m */; };
 		46A8AC8E20A538C000E1C6B6 /* NSArray+LXLogChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */; };
 		46A8AC9120A54AF200E1C6B6 /* NSDictionary+LXLogChese.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8AC9020A54AF200E1C6B6 /* NSDictionary+LXLogChese.m */; };
 		46D7B59C20A986D0008310A7 /* NSString+LXLogStringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D7B59B20A986D0008310A7 /* NSString+LXLogStringSize.m */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		1F6EE394450C862DD17033F0 /* Pods-LXLogViewPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLogViewPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXLogViewPods/Pods-LXLogViewPods.debug.xcconfig"; sourceTree = "<group>"; };
+		4665BB1E20B3ED6B00313070 /* PAirSandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAirSandbox.h; sourceTree = "<group>"; };
+		4665BB1F20B3ED6B00313070 /* PAirSandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAirSandbox.m; sourceTree = "<group>"; };
 		46717B2120A2A37E004DAD91 /* LXLogTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogTabBarController.h; sourceTree = "<group>"; };
 		46717B2220A2A37E004DAD91 /* LXLogTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogTabBarController.m; sourceTree = "<group>"; };
 		46717B2520A2A52F004DAD91 /* LXLogBaseNaigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogBaseNaigationController.h; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		467CB33E20AEBA5B0027A90A /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
 		467CB34020AED4AA0027A90A /* LXLogMemoryLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogMemoryLabel.h; sourceTree = "<group>"; };
 		467CB34120AED4AA0027A90A /* LXLogMemoryLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogMemoryLabel.m; sourceTree = "<group>"; };
+		4685ACE520B3BC3A003A5A1C /* LXLogSandbox_GCDWebServerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLogSandbox_GCDWebServerVC.h; sourceTree = "<group>"; };
+		4685ACE620B3BC3A003A5A1C /* LXLogSandbox_GCDWebServerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLogSandbox_GCDWebServerVC.m; sourceTree = "<group>"; };
 		46A8AC8C20A538C000E1C6B6 /* NSArray+LXLogChinese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+LXLogChinese.h"; sourceTree = "<group>"; };
 		46A8AC8D20A538C000E1C6B6 /* NSArray+LXLogChinese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LXLogChinese.m"; sourceTree = "<group>"; };
 		46A8AC8F20A54AF200E1C6B6 /* NSDictionary+LXLogChese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LXLogChese.h"; sourceTree = "<group>"; };
@@ -129,6 +135,15 @@
 				DA8A34E82896E1B134D3348E /* Pods_LXLogViewPods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4665BB1D20B3ED6B00313070 /* AirSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				4665BB1E20B3ED6B00313070 /* PAirSandbox.h */,
+				4665BB1F20B3ED6B00313070 /* PAirSandbox.m */,
+			);
+			path = AirSandbox;
 			sourceTree = "<group>";
 		};
 		46717B1F20A2A294004DAD91 /* LXLogTabbarC */ = {
@@ -202,8 +217,11 @@
 		46717B2B20A2A72E004DAD91 /* Sandbox（沙盒文件） */ = {
 			isa = PBXGroup;
 			children = (
+				4665BB1D20B3ED6B00313070 /* AirSandbox */,
 				46717B3C20A2A7D7004DAD91 /* LXLogSandboxViewController.h */,
 				46717B3D20A2A7D7004DAD91 /* LXLogSandboxViewController.m */,
+				4685ACE520B3BC3A003A5A1C /* LXLogSandbox_GCDWebServerVC.h */,
+				4685ACE620B3BC3A003A5A1C /* LXLogSandbox_GCDWebServerVC.m */,
 			);
 			path = "Sandbox（沙盒文件）";
 			sourceTree = "<group>";
@@ -472,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4685ACE720B3BC3A003A5A1C /* LXLogSandbox_GCDWebServerVC.m in Sources */,
 				467C16A620A4569C00A58BDD /* NSString+LXLogDeviceInfo.m in Sources */,
 				46717B4420A2CD90004DAD91 /* WeakProxy.m in Sources */,
 				46724CE8209A9CEC00FE09E7 /* ViewController.m in Sources */,
@@ -498,6 +517,7 @@
 				467CB33620AE64CE0027A90A /* MNAssistiveBtn.m in Sources */,
 				46717B5A20A301C0004DAD91 /* LXLogHelper.m in Sources */,
 				46717B3820A2A7BA004DAD91 /* LXLogConsoleViewController.m in Sources */,
+				4665BB2020B3ED6C00313070 /* PAirSandbox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

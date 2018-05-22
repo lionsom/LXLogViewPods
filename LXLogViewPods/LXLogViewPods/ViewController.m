@@ -42,8 +42,14 @@
     [self createBtn:CGRectMake(0, 50+H, W, H) :1 :@"主线程输出Log"];
     [self createBtn:CGRectMake(W, 50+H, W, H) :2 :@"子线程输出Log"];
     
-    [self createBtn:CGRectMake(0, 100+H*2, W, H) :3 :@"内存爆炸按钮"];
-    [self createBtn:CGRectMake(W, 100+H*2, W, H) :4 :@"清理内存"];
+    [self createBtn:CGRectMake(0, 100+H*2, W, H) :3 :@"开启timer-内存爆炸按钮"];
+    [self createBtn:CGRectMake(W, 100+H*2, W, H) :4 :@"暂停timer-内存不变"];
+    [self createBtn:CGRectMake(0, 100+H*3, W, H) :5 :@"关闭timer-内存清空"];
+
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(test) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    [self.timer setFireDate:[NSDate distantFuture]];
+
 }
 
 
@@ -68,17 +74,18 @@
     }
     
     if (btn.tag == 3) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(test) userInfo:nil repeats:YES];
-        [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+        [self.timer setFireDate:[NSDate distantPast]];
     }
     if (btn.tag == 4) {
+        [self.timer setFireDate:[NSDate distantFuture]];
+    }
+    if (btn.tag == 5) {
         [self.timer invalidate];
         self.timer = nil;
     
         [self.arr removeAllObjects];
         self.arr = nil;
     }
-    
 }
 
 

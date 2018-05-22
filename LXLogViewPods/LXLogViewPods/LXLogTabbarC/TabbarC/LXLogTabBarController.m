@@ -37,7 +37,7 @@
     //图片大小建议32*32
     [self addChildrenViewController:@"LXLogConsoleViewController" andTitle:@"Console" andImageName:@"tabbar_console" andSelectImage:@"tab1_p"];
     [self addChildrenViewController:@"LXLogAppInfoViewController" andTitle:@"APP" andImageName:@"tabbar_app" andSelectImage:@"tab2_p"];
-//    [self addChildrenViewController:@"LXLogSandboxViewController" andTitle:@"Sandbox" andImageName:@"tabbar_sandbox" andSelectImage:@"tab3_p"];
+    [self addChildrenViewController:@"LXLogSandboxViewController" andTitle:@"Sandbox" andImageName:@"tabbar_sandbox" andSelectImage:@"tab3_p"];
 }
 
 - (void)addChildrenViewController:(NSString *)class andTitle:(NSString *)title andImageName:(NSString *)imageName andSelectImage:(NSString *)selectedImage{
